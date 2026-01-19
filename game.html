@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="games.css" />
+        <script src="game.js" type="module"></script>
+    </head>
+    <body>
+    
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="upgrade.html" id="upgrade">Upgrade</a>
+        </nav>
+
+        <main>
+            <h2>Round</h2>
+            <h3 id="round"></h3>
+
+            <div id="bossHealth">
+            <h3 id="bossHealthTitle"></h3>
+            </div>
+
+            <div id="canvas-wrapper">
+                <canvas width="512" height="320"></canvas>
+            </div>
+            <p id="powerUp"></p>
+            <h2 id="outcome"></h2>
+            <div id="continue"></div>
+            <div id="player-head-up-display">
+
+                <div id="gun_display">
+                    <h2>Gun</h2>
+                    <p id="gun"></p>
+                </div>
+
+                <div id="health_display">
+                    <h2>Health</h2>
+                    <progress value="100" max="100" id="player-health-bar"></progress>
+                    <p id="health"></p>
+                </div>
+
+                <div id="coins_display">
+                    <h2>Coins</h2>
+                    <p id="coins"></p>
+                </div>
+                <div id="score_display">
+                    <h2>Score</h2>
+                    <p id="score"></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
