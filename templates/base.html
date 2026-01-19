@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='games.css') }}" />
+        <script src="{{ url_for('static', filename='game.js') }}" type="module"></script>
+    </head>
+    <nav>
+        {% if g.user_id %}
+            <a href="{{ url_for('logout') }}" id="logout">Logout</a>
+        {% else %}
+            <a href="{{ url_for('login')}}" id="login">Login</a>
+            <a href="{{ url_for('register')}}" id="login">Register</a>
+        {% endif %}
+        <a href="{{ url_for('index')}}">Home</a>
+    </nav>
+    <body>
+        {% block main_content %}
+        {% endblock %}
+    </body>
+</html>

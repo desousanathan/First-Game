@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='games.css') }}" />
+    </head>
+    <body>
+        <a href="{{ url_for('index')}}">Home</a>
+        <a href="{{ url_for('register')}}">Register</a>
+
+
+    <form action="" method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" id="user_id"/>
+        {{user_id_error}}
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        {{password_error}}
+        <br />
+
+        <input type="submit" />
+    </form>
+    {{ message }}
+    </body>
+</html>
