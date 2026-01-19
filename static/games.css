@@ -1,0 +1,34 @@
+*{
+    text-align: center;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    margin: 1em auto;
+}
+
+#player-head-up-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightgray;
+    align-items: center;
+}
+#player-head-up-display *{
+    padding: 0.5em;
+}
+#player-health-bar{
+    color: green;
+}
+
+form{
+    padding: 1em;
+}
+
+#main-page{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+
