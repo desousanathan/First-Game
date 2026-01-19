@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="test.css" />
+        <script src="test.js" type="module"></script>
+    </head>
+    <body>
+        <a href="test.html">Back</a>
+        <p id="coins-id"></p>
+        <form id="form_health">
+            <input type="input" id="upgrade-health" name="upgrade-health" value="0" disabled />
+            <label for="upgrade-health">Upgrade Health (20 coins)</label>
+            
+            <button type="submit" id="upgrade-health">Upgrade</button>
+            <span id="health-errors"></span>
+        </form>
+        <form id="form_bullet">
+            <input type="input" id="upgrade-bullet-damage" name="upgrade-bullet-damage" value="0" disabled />
+            <label for="upgrade-bullet-damage">Upgrade Bullet Damage (20 coins)</label>
+            
+            <button type="submit" id="upgrade-bullet-damage">Upgrade</button>
+            <span id="bullet-errors"></span>
+        </form>
+        <form id="form_speed">
+            <input type="input" id="upgrade-speed" name="upgrade-speed" value="0" disabled />
+            <label for="upgrade-speed">Upgrade Speed (20 coins)</label>
+           
+            <button type="submit" id="upgrade-speed">Upgrade</button>
+            <span id="speed-errors"></span>
+        </form>
+
+        <h2>Coins</h2>
+        <p id="coins"></p>
+    </body>
+</html>
